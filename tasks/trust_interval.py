@@ -1,4 +1,4 @@
-from statistics.distribution import NormalDistribution
+from statistics.distribution import NormalDistribution, T_Student
 
 """
 Рассчитайте 99% доверительный интервал для следующего примера:
@@ -29,4 +29,3 @@ standard_error = NormalDistribution.standard_error_of_mean(sd, n)
 low_th = mean - koeff_for_95 * standard_error
 high_th = mean + koeff_for_95 * standard_error
 print(f"Trust interval 95% is: {low_th, high_th}")
-
